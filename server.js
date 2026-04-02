@@ -30,7 +30,7 @@ app.post("/api/send-signed-doc", async (req, res) => {
     const font = await pdfDoc.embedFont(StandardFonts.Helvetica);
     const boldFont = await pdfDoc.embedFont(StandardFonts.HelveticaBold);
 
-    page.drawText("Food With Care - Signed Authorization", {
+    page.drawText("Food With Care - Please Leave the box - Por favor deja la caja", {
       x: 50,
       y: height - 50,
       size: 18,
